@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+	<style>
+		body{
+			height: 100vh;
+		}
+		#addpages{
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+	</style>
+    <script src="./assets/js/jquery.min.js"></script>
+</head>
+
+<body >
+    <!-- Login block -->
+    <iframe id="addpages" src=""></iframe>
+
+    <!-- After Login -->
+
+</body>
+<script>
+var path = window.location.origin;
+path = window.location.origin + '/frontdesk';
+$('#addpages').attr('src', path+'/html/loginpage.html')
+</script>
+<!-- <script src="./myscript.js"></script> -->
+<!-- <script src="js/afterlogin.js"></script> -->
+
+</html>

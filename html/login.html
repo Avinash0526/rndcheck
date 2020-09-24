@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+<body onload = "getDta()" class="bodyoverflow">
+    
+    <div class="totalPage" >
+        <div id="showpages">
+            <div class="header">
+                <div class="logoutBlock">
+                    <p id="logout">logout</p>
+                </div>
+                <div class="searchBar">
+                    <div class='newpatient'><p id='addPatient'>New registration</p></div>
+                    <label>Find Patient By:
+                        <input type='text' id='txt_searchall' placeholder=' OP/Phone/Name'>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="datacontainer">
+                
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-bgColor">
+                        <tr>
+                            <th width="15%" align="center">OP Number</th>
+                            <th width="35%">Patient Name</th>
+                            <th width="45%">Mobile</th>
+                            <th width="5%">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="todayDetails">
+            <!-- <div class="patientDetails">
+                <div class="details">
+                    <p>Today Patients</p>
+                </div>
+                <div class="listofpatients">
+                    <ul>
+                        <li>1</li>
+                        <li>Patient Name: Sudhakar</li>
+                        <li>Assign to: Dr.Anil</li>
+                        <li>Status: completed</li>
+                    </ul>
+                </div>
+                <div class="listofpatients">
+                    <ul>
+                        <li>2</li>
+                        <li>Patient Name: Ramesh</li>
+                        <li>Assign to: Dr.K.A.Reddy</li>
+                        <li>Status: Inprogress</li>
+                    </ul>
+                </div>
+                <div class="listofpatients">
+                    <ul>
+                        <li>3</li>
+                        <li>Patient Name: Naveen</li>
+                        <li>Assign to: Dr.Satya</li>
+                        <li>Status: waiting</li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="availableDoctors">
+                <div class="details">
+                    <p>Available Doctors</p>
+                </div>
+                <p>Dr. Satya</p>
+                <p>Dr. K.A. Reddy</p>
+                <p>Dr. Anil</p>
+                <p>Dr. Paramesh</p>
+                <p>Dr. Kavya</p>
+				
+            </div>
+        </div>
+    </div>
+	<div class="popForm">
+		<div class="subForm">
+		<span class="close" id="closeAssign">&#10006;</span>
+			<input type="text" name="opnum" disabled />
+			<input type="text" name="pname" disabled />
+			<input type="text" name="mobile" disabled />
+			 <select placeholder="Assign Doctor">
+            <option disabled selected>Assign Doctor</option>
+            <option value="ramesh">ramesh</option>
+            <option value="reddy">reddy</option>
+			<option value="sushma">sushma</option>
+			<option value="satish">satish</option>
+			<option value="shamila">shamila</option>
+        </select>
+		 <button type="submit" id="updatepatient">Assign</button>
+		</div>
+	</div>
+</body>
+<script src="../js/afterlogin.js"></script>
+</html>

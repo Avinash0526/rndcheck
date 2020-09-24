@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+
+<body >
+    <!-- Login block -->
+    <div class="loginPage">
+        <div class="formCustomize">
+            <h1><b>Login</b></h1>
+            <div class="loader"></div>
+            <p class="showhide"> Please provide correct username or password </p>
+            <div class="chooseRole" id="role">
+                <label class="container">Front-Desk
+                    <input type="radio" checked="checked" name="radio" data-role='frontdesk'>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Doctor
+                    <input type="radio" name="radio" data-role='doctor'>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <input placeholder="User Name" type="text" name="getuname" autocomplete="off" required />
+            <input placeholder="Password" type="password" name='getpassword' autocomplete="off" required />
+            <button type="submit" id="mainLogin">Login</button>
+        </div>
+    </div>
+
+    <!-- After Login -->
+
+</body>
+<script src="../js/myscript.js"></script>
+ <!-- <script src="js/afterlogin.js"></script> -->
+
+</html>

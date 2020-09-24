@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "username": "frontdeskadmin",
+        "userpsw": "admin123",
+        "role": "frontdesk"
+    },
+    {
+        "id": "2",
+        "username": "doctoradmin",
+        "userpsw": "admin123",
+        "role": "doctor"
+    }
+]

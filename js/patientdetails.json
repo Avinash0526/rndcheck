@@ -1,0 +1,112 @@
+[
+    {
+        "id": "1",
+        "name": "Satya Naveen",
+        "opnum": "01354",
+        "email": "naveen@gmail.com",
+        "mobile": "9635248752",
+        "whatsapp": "9635248752",
+        "photo": "",
+        "assignto": "reddy",
+        "doctor_id": "2"
+    },
+    {
+        "id": "2",
+        "name": "Rambabu",
+        "opnum": "25431",
+        "email": "ram@gmail.com",
+        "mobile": "9725486301",
+        "whatsapp": "9725486301",
+        "photo": "",
+        "assignto": "sushma",
+        "doctor_id": "3"
+    },
+    {
+        "id": "3",
+        "name": "Veeranna",
+        "opnum": "65248",
+        "email": "veera@gmail.com",
+        "mobile": "9885549420",
+        "whatsapp": "9885549420",
+        "photo": "",
+        "assignto": "satish",
+        "doctor_id": "4"
+    },
+    {
+        "id": "4",
+        "name": "Bhanu Shankar",
+        "opnum": "52145",
+        "email": "bahnu@gmail.com",
+        "mobile": "9854620148",
+        "whatsapp": "9854620148",
+        "photo": "",
+        "assignto": "ramesh",
+        "doctor_id": "5"
+    },
+    {
+        "id": "5",
+        "name": "Raju",
+        "opnum": "00025",
+        "email": "raju@gmail.com",
+        "mobile": "9568420389",
+        "whatsapp": "9568420389",
+        "photo": "",
+        "assignto": "satish",
+        "doctor_id": "4"
+    },
+    {
+        "id": "6",
+        "name": "Ramana",
+        "opnum": "02543",
+        "email": "ramana@gmail.com",
+        "mobile": "9842186687",
+        "whatsapp": "9842186687",
+        "photo": "",
+        "assignto": "narasimha",
+        "doctor_id": "1"
+    },
+    {
+        "id": "7",
+        "name": "Ravi",
+        "opnum": "25584",
+        "email": "ravi@gmail.com",
+        "mobile": "9521556984",
+        "whatsapp": "9521556984",
+        "photo": "",
+        "assignto": "reddy",
+        "doctor_id": "2"
+    },
+    {
+        "id": "8",
+        "name": "Renu",
+        "opnum": "11452",
+        "email": "renu@gmail.com",
+        "mobile": "9632587410",
+        "whatsapp": "9632587410",
+        "photo": "",
+        "assignto": "sushma",
+        "doctor_id": "3"
+    },
+    {
+        "id": "9",
+        "name": "Prajwal",
+        "opnum": "55203",
+        "email": "prajwal@gmail.com",
+        "mobile": "9963255852",
+        "whatsapp": "9963255852",
+        "photo": "",
+        "assignto": "shamila",
+        "doctor_id": "6"
+    },
+    {
+        "id": "10",
+        "name": "Praveen",
+        "opnum": "22001",
+        "email": "praveen@gmail.com",
+        "mobile": "9885214885",
+        "whatsapp": "9885214885",
+        "photo": "",
+        "assignto": "narasimha",
+        "doctor_id": "1"
+    }
+]

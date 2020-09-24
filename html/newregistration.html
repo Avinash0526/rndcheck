@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="registration">
+	<span class="close" id="closeForm">&#10006;</span>
+		<input type="text" name="opnum" disabled />
+        <input type="text" placeholder="Name" required />
+        <input type="number" placeholder="Age" required />
+        <select placeholder="Choose gender">
+            <option disabled selected>Choose gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <textarea placeholder="Address"></textarea>
+        <input type="number" placeholder="Phone no" required />
+        <input type="number" placeholder="Whatsapp no" required />
+        <input type="email" placeholder="Email" required />
+		 <select placeholder="Assign Doctor">
+            <option disabled selected>Assign Doctor</option>
+            <option value="ramesh">ramesh</option>
+            <option value="reddy">reddy</option>
+			<option value="sushma">sushma</option>
+			<option value="satish">satish</option>
+			<option value="shamila">shamila</option>
+        </select>
+        <div id="vid-controls">
+            <div class="flx">
+                <video id="vid-show" autoplay></video>
+                <div id="vid-canvas"></div>
+            </div>
+           
+            <input id="vid-take" type="button" value="Take Photo" />
+            
+        </div>
+        <button type="submit" id="registerpatinet">Register</button>
+    </div>
+</body>
+<script>
+window.addEventListener("load", function(){
+	let randnum = Math.floor(Math.random() * 90000) + 10000;
+    $('input[name="opnum"]').val(randnum);
+    // [1] GET ALL THE HTML ELEMENTS
+    var video = document.getElementById("vid-show"),
+        canvas = document.getElementById("vid-canvas"),
+        take = document.getElementById("vid-take");
+
+    // [2] ASK FOR USER PERMISSION TO ACCESS CAMERA
+    // WILL FAIL IF NO CAMERA IS ATTACHED TO COMPUTER
+    navigator.mediaDevices.getUserMedia({ video : true })
+    .then(function(stream) {
+      // [3] SHOW VIDEO STREAM ON VIDEO TAG
+      video.srcObject = stream;
+      video.play();
+
+      // [4] WHEN WE CLICK ON "TAKE PHOTO" BUTTON
+      take.addEventListener("click", function(){
+        // Create snapshot from video
+        var draw = document.createElement("canvas");
+        draw.width = video.videoWidth;
+        draw.height = video.videoHeight;
+        var context2D = draw.getContext("2d");
+        // context2D.drawImage(video, 0, 0, video.videoWidth, video.videoHeight);
+        context2D.drawImage(video, 0, 0)
+        // Put into canvas container
+        canvas.innerHTML = "";
+        canvas.appendChild(draw);
+      });
+    })
+	.catch(function(err) {
+      document.getElementById("vid-controls").innerHTML = "Please enable access and attach a camera";
+    });
+  });
+</script>
+<script src="../js/afterlogin.js"></script>
+</html>
