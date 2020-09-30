@@ -279,12 +279,17 @@
 
 			<!------------------ Examination ---------------------->
 			<div class="body_text three">
+				<div class="main_check_block">
+					<label>Normal
+						<input type="checkbox" class="makedefaultCheck">
+					</label>
+				</div>
 				<div class="border_details">
 					<div class="details">
 						<h5>Gait:</h5>
 
 						<label for="normal">Normal
-							<input type="radio" name="gait">
+							<input type="radio" name="gait" class="defaultCheck">
 						</label>
 
 						<label for="abnormal">Abnormal <span info="Gait disorders result from disease of muscles, nerves, bones and joints or the cerebellum.
@@ -300,7 +305,7 @@
 						<h5>Speech:</h5>
 
 						<label for="normal">Normal
-							<input type="radio" name="Speech">
+							<input type="radio" name="Speech" class="defaultCheck">
 						</label>
 
 						<label>Disturbed <span
@@ -314,7 +319,7 @@
 						<h5>Eyes:</h5>
 
 						<label for="normal">Normal
-							<input type="radio" name="eyes">
+							<input type="radio" name="eyes" class="defaultCheck">
 						</label>
 
 						<label>Exopthalmus <span
@@ -345,7 +350,7 @@
 						<h5>Face:</h5>
 
 						<label for="normal">Symmetry
-							<input type="radio" name="face">
+							<input type="radio" name="face" class="defaultCheck">
 						</label>
 
 						<label>Asymmetry <span
@@ -371,7 +376,7 @@
 						<h5>Lips:</h5>
 
 						<label for="normal">Normal in size, shape and color
-							<input type="radio" name="face">
+							<input type="radio" name="lips" class="defaultCheck">
 						</label>
 
 						<label>Angular stomatitis <span info="Anaemia, diabetes milletus,">i</span>
@@ -388,7 +393,7 @@
 						<h5>Jaws:</h5>
 
 						<label for="normal">Normal maxilla and mandible
-							<input type="radio" name="jaws">
+							<input type="radio" name="jaws" class="defaultCheck">
 						</label>
 
 						<label>Prognathism and thickened facies prominent forehead, enlarged mandible <span
@@ -402,7 +407,7 @@
 						<h5>Salivary Glands:</h5>
 
 						<label for="normal">No swelling noted
-							<input type="radio" name="Salivary">
+							<input type="radio" name="Salivary" class="defaultCheck">
 						</label>
 
 						<label>Swelling <span info="Mumps, sjogrens syndrome, sialosis">i</span>
@@ -415,7 +420,7 @@
 						<h5>Hands:</h5>
 
 						<label for="normal">No abnormalities noted
-							<input type="radio" name="hands">
+							<input type="radio" name="hands" class="defaultCheck">
 						</label>
 
 						<label>Finger clubbing <span info="COPD, chronic smoker, cardiopulmonary disease">i</span>
@@ -440,7 +445,7 @@
 						<h5>Legs:</h5>
 
 						<label for="normal">Normal
-							<input type="radio" name="legs">
+							<input type="radio" name="legs" class="defaultCheck">
 						</label>
 
 						<label>Amputated <span
@@ -472,18 +477,18 @@
 											type="text"> ? </p>
 									<p>Blood tests required:</p>
 									<label>FBS, PPBS
-										<input type="radio" name="Blood_test" data-open>
+										<input type="checkbox" name="Blood_test" data-open>
 									</label>
 									<label>HbA1C
-										<input type="radio" name="Blood_test" data-open>
+										<input type="checkbox" name="Blood_test" data-open>
 									</label>
 									<p>Blood report:</p>
 									<label>FBS, PPBS
-										<input type="radio" name="Blood_test" data-open>
+										<input type="checkbox" name="Blood_test" data-open>
 										<textarea></textarea>
 									</label>
 									<label>HbA1C
-										<input type="radio" name="Blood_test" data-open>
+										<input type="checkbox" name="Blood_test" data-open>
 										<textarea></textarea>
 									</label>
 								</div>
@@ -495,45 +500,33 @@
 									</p>
 									<p>Tests required:</p>
 									<label>Blood Pressure (BP)
-										<input type="radio" name="Hypertension" data-open>
+										<input type="checkbox" name="Hypertension" data-open>
 									</label>
 									<p>BP value:</p>
 								</div>
 								<div class="innerBox">
+								<label>
 									<p>H/o chest pain <span
 											info="Suggests angina pectoris, myocardial infarction, patients are usually on medication such as aspirin, clopidogrel, warfarin and other blood thinners. Dentist should be prepared to deal with more bleeding after extraction of teeth.">i</span>
 										: ask for details – how many years bac? And list of medication<input
 											type="text">?</p>
-									<p>Tests Required:</p>
-									<label>Prothrombin Time (PT) with INR<br />
-										Activated Partial Thromboplastin Time (aPTT)<br />
-										Thrombin Time (TT)
-										<input type="radio" name="chest_pain" data-open>
-									</label>
-									<label>Blood Pressure (BP)
-										<input type="radio" name="chest_pain" data-open>
-									</label>
-									<p>Test Report <span
-											info="Enter the values for the record, mention date and lab name">i</span> :
-									</p>
-									<p>Prothrombin Time (PT) with INR<input type="text"></p>
-									<p>Activated Partial Thromboplastin Time (aPTT)<input type="text"></p>
-									<p>Thrombin Time (TT)<input type="text"></p>
-									<p>Blood pressure (BP)<input type="text"></p>
-								</div>
-								<div class="innerBox">
+										<input type="checkbox" name="Hypertension">
+								</label>
+								<label>
 									<p>H/o bypass surgery <span
 											info="Patients with recent H/o bypass surgery will be on medication such as aspirin, clopidogrel, warfarin and other blood thinners. Dentist should be prepared to deal with more bleeding after extraction of teeth.">i</span>
 										: ask for details – how many years back? And list of medication<input
 											type="text">?</p>
+										<input type="checkbox" name="Hypertension">
+								</label>
 									<p>Tests Required:</p>
 									<label>Prothrombin Time (PT) with INR<br />
 										Activated Partial Thromboplastin Time (aPTT)<br />
 										Thrombin Time (TT)
-										<input type="radio" name="bypass_surgery" data-open>
+										<input type="checkbox" name="chest_pain" data-open>
 									</label>
 									<label>Blood Pressure (BP)
-										<input type="radio" name="bypass_surgery" data-open>
+										<input type="checkbox" name="chest_pain" data-open>
 									</label>
 									<p>Test Report <span
 											info="Enter the values for the record, mention date and lab name">i</span> :
@@ -543,6 +536,7 @@
 									<p>Thrombin Time (TT)<input type="text"></p>
 									<p>Blood pressure (BP)<input type="text"></p>
 								</div>
+								
 								<div class="innerBox">
 									<p>Pace maker <span
 											info="A pacemaker monitors the cardiac electrical impulses and by delivering low energy electrical pulses, helps overcome the faulty electrical signalling. 
@@ -554,13 +548,13 @@
 										: ask for details history and check the medical records for stability of cardiac
 										function<input type="text">.</p>
 									<label>Blood Pressure (BP)
-										<input type="radio" name="Pace_maker" data-open>
+										<input type="checkbox" name="Pace_maker" data-open>
 									</label>
 									<label>Pulse/ heart rate
-										<input type="radio" name="Pace_maker" data-open>
+										<input type="checkbox" name="Pace_maker" data-open>
 									</label>
 									<label>Consultation with physician
-										<input type="radio" name="Pace_maker" data-open>
+										<input type="checkbox" name="Pace_maker" data-open>
 									</label>
 								</div>
 								<div class="innerBox">
@@ -571,7 +565,7 @@
 											ask for details, since how many years?, triggering factors , when was the
 											last
 											asthamatic attack? and list of medication <input type="text">?</p>
-										<input type="radio" name="Asthma" data-open>
+										<input type="checkbox" name="Asthma" data-open>
 										<textarea></textarea>
 									</label>
 								</div>
@@ -580,25 +574,26 @@
 										Advised to check BP">i</span> : ask for details, since how many years ? And list of medication <input
 											type="text">?</p>
 									<p>Tests Required:</p>
-									<label>T3<br />T4<br />TSH
-										<input type="radio" name="Pace_maker" data-open>
+									<label>T3, T4, TSH
+										<input type="checkbox" name="Pace_maker" data-open>
 									</label>
 									<label>Blood pressure (BP)
-										<input type="radio" name="Pace_maker" data-open>
+										<input type="checkbox" name="Pace_maker" data-open>
 									</label>
 									<p>Test Report <span
 											info="Enter the values for the record, mention date and lab name">i</span> :
 									</p>
-									<label>T3<br />T4<br />TSH
-										<input type="radio" name="Pace_maker" data-open>
+									<label>T3, T4, TSH
+										<input type="checkbox" name="Pace_maker" data-open>
 										<textarea></textarea>
 									</label>
 									<label>Blood pressure (BP)
-										<input type="radio" name="Pace_maker" data-open>
+										<input type="checkbox" name="Pace_maker" data-open>
 										<textarea></textarea>
 									</label>
 								</div>
 								<div class="innerBox">
+								<label>
 									<p>Renal dialysis <span info="Patients on renal dialysis are usually on anticoagulants on the dialysis days.
 									Invasive dental procedures should be done on the next day of dialysis or non-dialysis 
 									Dentist should be prepared to handle excess bleeding after extractions.
@@ -614,38 +609,28 @@
 									Antimicrobials- Aminoglycosides Carbenicillin, Cefadroxil, Cefalexin, Cefixime, Cefalotin, Gentamycin
 									Tetracycline">i</span> : ask for detailed history, look into the medical records and consult the
 										nephrologist.<input type="text"></p>
-									<p>Tests required:</p>
-									<label>Complete blood count (CBC)<br />Serum creatinine<br />Prothrombin Time (PT)
-										with INR<br />Activated Partial Thromboplastin Time (aPTT)<br />Thrombin Time
-										(TT)
-										<input type="radio" name="dialysis" data-open>
-									</label>
-									<p>Tests reports:</p>
-									<label>Complete blood count (CBC)<br />Serum creatinine<br />Prothrombin Time (PT)
-										with INR<br />Activated Partial Thromboplastin Time (aPTT)<br />Thrombin Time
-										(TT)
-										<input type="radio" name="dialysis" data-open>
-										<textarea></textarea>
-									</label>
-								</div>
-								<div class="innerBox">
+										<input type="checkbox" name="dialysis" data-open>
+								</label>
+								<label>
 									<p>Renal transplant <span info="Elective dental care is best deferred for at least 3 months after transplantation, to avoid unnecessary complications.
 									Immunosuppressive therapy can lead to liability to infections and to a bleeding tendency. 
 									Antibiotic prophylaxis is indicated for invasive dental procedures, particularly if provided within 6 months post transplantation. In addition steroid cover may be indicated 
 									Macrolide antibiotics and azole antifungal drugs should be avoided.
 									Safe to use LA">i</span> : ask for detailed history, look into the medical records and consult the
 										nephrologist.<input type="text"></p>
+										<input type="checkbox" name="dialysis" data-open>
+								</label>
 									<p>Tests required:</p>
 									<label>Complete blood count (CBC)<br />Serum creatinine<br />Prothrombin Time (PT)
 										with INR<br />Activated Partial Thromboplastin Time (aPTT)<br />Thrombin Time
 										(TT)
-										<input type="radio" name="transplant" data-open>
+										<input type="checkbox" name="dialysis" data-open>
 									</label>
 									<p>Tests reports:</p>
 									<label>Complete blood count (CBC)<br />Serum creatinine<br />Prothrombin Time (PT)
 										with INR<br />Activated Partial Thromboplastin Time (aPTT)<br />Thrombin Time
 										(TT)
-										<input type="radio" name="transplant" data-open>
+										<input type="checkbox" name="dialysis" data-open>
 										<textarea></textarea>
 									</label>
 								</div>
@@ -654,11 +639,11 @@
 										the rheumatologist/physician.<input type="text"></p>
 									<p>Tests required:</p>
 									<label>Complete blood count (CBC)
-										<input type="radio" name="Arthritis" data-open>
+										<input type="checkbox" name="Arthritis" data-open>
 									</label>
 									<p>Tests reports:</p>
 									<label>Complete blood count (CBC)
-										<input type="radio" name="Arthritis" data-open>
+										<input type="checkbox" name="Arthritis" data-open>
 										<textarea></textarea>
 									</label>
 								</div>
@@ -5797,26 +5782,28 @@
 								<option data-id="one">Cervical abrasion–initail</option>
 								<option data-id="two">Decay–involving pulp</option>
 								<option data-id="two">decay–grossly decayed</option>
-								<option data-id="two">Root Stump</option>
+								<option data-id="RootStump">Root Stump</option>
 								<option data-id="two">Cervical abrasion-deep</option>
 								<option data-id="three">Swelling</option>
 								<option data-id="four">Mobile tooth Grade 1</option>
 								<option data-id="four">Mobile tooth Grade 2</option>
-								<option data-id="four">Mobile tooth Grade 3</option>
+								<option data-id="Grade3">Mobile tooth Grade 3</option>
 								<option data-id="five">MISSING TOOTH/TEETH</option>
 								<option data-id="six">Impacted tooth</option>
 								<option data-id="seven">Buccally erupted</option>
-								<option data-id="eight">Supernumerary tooth</option>
+								<option data-id="Supernumerary">Supernumerary tooth</option>
 								<option data-id="eight">Metal alloy crown PFM crown</option>
 								<option data-id="eight">Metal free crown Acrylic crown</option>
 								<option data-id="eight">Metal alloy bridge PFM bridge</option>
 								<option data-id="eight">Metal free bridge Acrylic bridge</option>
-								<option data-id="nine">Peri-implantitis</option>
-								<option data-id="nine">Broken implant abutment</option>
+								<option data-id="Peri-implantitis">Peri-implantitis</option>
+								<option data-id="Broken_implant">Broken implant abutment</option>
 								<option data-id="nine">Mobile implant abutment</option>
 								<option data-id="nine">Mobility of the implant crown</option>
 								<option data-id="ten">RPD Unstable prosthesis</option>
 								<option data-id="ten">RPD Broken prosthesis</option>
+								<option data-id="ten">Complete Denture Unstable prosthesis</option>
+								<option data-id="RPD_Broken">Complete Denture Broken prosthesis</option>
 							</select>
 							<select class="selectfinding childfinding">
 								<option selected>Choose Findings</option>
@@ -5852,17 +5839,28 @@
 									<option>RCT and crown</option>
 									<option>Extraction and replacement with implant/crown or FPD</option>
 								</select>
+								<select id="RootStump" class="choose_treatment">
+									<option selected>Choose Treatment</option>
+									<option>Extraction and replacement with implant/crown or FPD</option>
+								</select>
 								<select id="three" class="choose_treatment">
 									<option selected>Choose Treatment</option>
 									<option>Aspiration</option>
 									<option>Biopsy</option>
-									<option>Definitive treatement plan </option>
+									<option>Dentol aloveolar </option>
+									<option>abscess</option>
+									<option>Cellulitis</option>
+									<option>Ludwigs Angina</option>
 								</select>
 								<select id="four" class="choose_treatment">
 									<option selected>Choose Treatment</option>
 									<option>Extraction and replacement with implant/crown or FPD</option>
 									<option>RCT and crown</option>
 									<option>Composite splinting</option>
+								</select>
+								<select id="Grade3" class="choose_treatment">
+									<option selected>Choose Treatment</option>
+									<option>Extraction and replacement with implant/crown or FPD</option>
 								</select>
 								<select id="five" class="choose_treatment">
 									<option selected>Choose Treatment</option>
@@ -5881,25 +5879,40 @@
 									<option>Advised surgical removal</option>
 									<option>Orthodontic alignment</option>
 								</select>
-								<select id="eight" class="choose_treatment">
+								<select id="Supernumerary" class="choose_treatment">
 									<option selected>Choose Treatment</option>
 									<option>Advised surgical removal</option>
+								</select>
+								<select id="eight" class="choose_treatment">
+									<option selected>Choose Treatment</option>
 									<option>NA</option>
-									<option>Crown /PFM removal and RCT for the pontic tooth ------. With Possiblility of
+									<option>Crown/PFM removal and RCT for the pontic tooth. With Possiblility of
 										replacement with new crown/PFM/extraction of the pontic tooth in case of
-										fracture of
-										the pontic tooth</option>
+										fracture of the pontic tooth</option>
+								</select>
+								<select id="Peri-implantitis" class="choose_treatment">
+									<option selected>Choose Treatment</option>
+									<option>Oral prophylaxis</option>
+								</select>
+								<select id="Broken_implant" class="choose_treatment">
+									<option selected>Choose Treatment</option>
+									<option>Abutment stabilisation</option>
+									<option>Crown recementation</option>
+									<option>Retrieval of broken fragment</option>
+									<option>Implant removal</option>
 								</select>
 								<select id="nine" class="choose_treatment">
 									<option selected>Choose Treatment</option>
-									<option>Oral prophylaxis</option>
-									<option>Implant removal</option>
 									<option>Abutment stabilisation</option>
 									<option>Crown recementation</option>
 								</select>
 								<select id="ten" class="choose_treatment">
 									<option selected>Choose Treatment</option>
 									<option>Fabrication of new prosthesis</option>
+								</select>
+								<select id="RPD_Broken" class="choose_treatment">
+									<option selected>Choose Treatment</option>
+									<option>Repair of the broken prosthesis</option>
 								</select>
 							</div>
 							<div class="selecttreat childtreat">
@@ -6027,7 +6040,7 @@
 					<p>Provisional diagnosis</p>
 					<p>Radiographic findings</p>
 					<p>Final diagnosis</p>
-					<p>Treatment</p>
+					<p>Treatment Plan</p>
 				</div>
 				<div class="alldatadiagnosis">
 				</div>
@@ -6048,12 +6061,13 @@
 							<li>NO H/O ALLERGY TO ANY MEDICATION</li>
 							<li>H/O ALLERGY TO <span id="addHere"></span></li>
 						</ul>
-						<p><b>1) ANTIMICROBIALS/ANTIBIOTICS (TABLETS/CAPSULES)</b></p>
+						
 						<div class="medication_listing">
 							<div class="checkList">
 								<input type="radio" name="medication" value="tablets" checked />Tablets &nbsp;
 								<input type="radio" name="medication" value="capsules" />Capsules
-							</div>
+							</div><br/>
+							<p><b>1) ANTIMICROBIALS/ANTIBIOTICS (TABLETS/CAPSULES)</b></p>
 							<div class="displayList">
 								<div class="tablets displayMedic active">
 									<div class="listofselection">
@@ -6172,24 +6186,6 @@
 											style="width: 178px; height: 25px; margin-top: 2px; border: none; position:relative; left:2px; margin-right: 25px;"
 											type="text" name="product" value="" />
 										625 MG 2 TIMES A DAY FOR 3 DAYS
-									</div>
-									<div class="listofselection">
-										<input type="checkbox"> CAPSULES
-										<select style="width: 200px; position:absolute;"
-											onchange="this.nextElementSibling.value=this.value">
-											<option>PANTODAC</option>
-											<option>PANTOCID</option>
-											<option>PANTOP</option>
-											<option value=""></option>
-										</select>
-										<input class="datagetval"
-											style="width: 178px; height: 25px; margin-top: 2px; border: none; position:relative; left:2px; margin-right: 25px;"
-											type="text" name="product" value="" />
-										40 MG 2 TIMES A DAY 30 MINUTES BEFORE FOOD
-									</div>
-									<div class="listofselection">
-										<input type="checkbox"> CAPSULES.PANTOPRAZOLE 40 MG 1 TIMES A DAY 30 MINUTES
-										BEFORE FOOD
 									</div>
 								</div>
 							</div>
@@ -6346,7 +6342,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>ANTI-GASTRIC TABLETS</b></p>
+						<p><b>3) ANTI-GASTRIC TABLETS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6381,9 +6377,29 @@
 										BEFORE FOOD
 									</div>
 								</div>
+								<div class="capsules displayMedic">
+									<div class="listofselection">
+										<input type="checkbox"> CAPSULES
+										<select style="width: 200px; position:absolute;"
+											onchange="this.nextElementSibling.value=this.value">
+											<option>PANTODAC</option>
+											<option>PANTOCID</option>
+											<option>PANTOP</option>
+											<option value=""></option>
+										</select>
+										<input class="datagetval"
+											style="width: 178px; height: 25px; margin-top: 2px; border: none; position:relative; left:2px; margin-right: 25px;"
+											type="text" name="product" value="" />
+										40 MG 2 TIMES A DAY 30 MINUTES BEFORE FOOD
+									</div>
+									<div class="listofselection">
+										<input type="checkbox"> CAPSULES.PANTOPRAZOLE 40 MG 1 TIMES A DAY 30 MINUTES
+										BEFORE FOOD
+									</div>
+								</div>
 							</div>
 						</div>
-						<p><b>ANALGESICS/PAIN KILLERS TABLETS</b></p>
+						<p><b>4) ANALGESICS/PAIN KILLERS TABLETS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6491,19 +6507,7 @@
 											type="text" name="product" value="" />
 										2 TIMES A DAY FOR ------- DAYS AFTER FOOD
 									</div>
-									<div class="listofselection">
-										<input type="checkbox"> CAPSULE
-										<select style="width: 200px; position:absolute;"
-											onchange="this.nextElementSibling.value=this.value">
-											<option>TRAMADOL </option>
-											<option>TRAMAZAC (TRAMADOL 50MG)</option>
-											<option value=""></option>
-										</select>
-										<input class="datagetval"
-											style="width: 178px; height: 25px; margin-top: 2px; border: none; position:relative; left:2px; margin-right: 25px;"
-											type="text" name="product" value="" />
-										50MG 2 TIMES A DAY FOR ------- DAYS AFTER FOOD
-									</div>
+									
 									<div class="listofselection">
 										<input type="checkbox"> TABLET
 										<select style="width: 200px; position:absolute;"
@@ -6518,9 +6522,24 @@
 										2 TIMES A DAY FOR ------- DAYS AFTER FOOD
 									</div>
 								</div>
+								<div class="capsules displayMedic">
+									<div class="listofselection">
+										<input type="checkbox"> CAPSULE
+										<select style="width: 200px; position:absolute;"
+											onchange="this.nextElementSibling.value=this.value">
+											<option>TRAMADOL </option>
+											<option>TRAMAZAC (TRAMADOL 50MG)</option>
+											<option value=""></option>
+										</select>
+										<input class="datagetval"
+											style="width: 178px; height: 25px; margin-top: 2px; border: none; position:relative; left:2px; margin-right: 25px;"
+											type="text" name="product" value="" />
+										50MG 2 TIMES A DAY FOR ------- DAYS AFTER FOOD
+									</div>
+								</div>
 							</div>
 						</div>
-						<p><b>OTHER DRUGS</b></p>
+						<p><b>5) OTHER DRUGS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6560,7 +6579,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>DRUGS FOR CANDIDIASIS</b></p>
+						<p><b>6) DRUGS FOR CANDIDIASIS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6579,7 +6598,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>GELS FOR ORAL ULCERS</b></p>
+						<p><b>7) GELS FOR ORAL ULCERS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6625,7 +6644,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>DENTAL FLOSS</b></p>
+						<p><b>8) DENTAL FLOSS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6658,7 +6677,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>MOUTH WASHES</b></p>
+						<p><b>9) MOUTH WASHES</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6690,7 +6709,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>TOOTH PASTES</b></p>
+						<p><b>10) TOOTH PASTES</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6736,7 +6755,7 @@
 								</div>
 							</div>
 						</div>
-						<p><b>DENTURE CLEANING TABLETS</b></p>
+						<p><b>11) DENTURE CLEANING TABLETS</b></p>
 						<div class="medication_listing">
 							<div class="displayList">
 								<div class="tablets displayMedic active">
@@ -6864,10 +6883,26 @@
 					let Radiographic = $('div[data-ref=' + getId + '] #Radiographic').html();
 					let Final = $('div[data-ref=' + getId + '] #Final').html();
 					$('.flexData').append('<div class="dynamicdata">' + indb + '-' + selectVal + '</div>');
-					$('.alldatadiagnosis').append('<div class="dynamicdata">' + indb + '-' + selectVal + '</div>')
-					$('.alldatadiagnosis').append('<div class="dynamicdata">' + Provisional + '</div>')
-					$('.alldatadiagnosis').append('<div class="dynamicdata">' + Radiographic + '</div>')
-					$('.alldatadiagnosis').append('<div class="dynamicdata">' + Final + '</div>')
+					$('.alldatadiagnosis').append('<div class="dynamicdata">' + indb + '-' + selectVal + '</div>');
+					console.log(Provisional, Radiographic, Final)
+					if(Provisional == undefined){
+						$('.alldatadiagnosis').append('<div class="dynamicdata"> NA </div>')
+					}
+					else{
+						$('.alldatadiagnosis').append('<div class="dynamicdata">' + Provisional + '</div>')
+					}
+					if(Radiographic == undefined){
+						$('.alldatadiagnosis').append('<div class="dynamicdata"> NA </div>')
+					}
+					else{
+						$('.alldatadiagnosis').append('<div class="dynamicdata">' + Radiographic + '</div>')
+					}
+					if(Final == undefined){
+						$('.alldatadiagnosis').append('<div class="dynamicdata"> NA </div>')
+					}
+					else{
+						$('.alldatadiagnosis').append('<div class="dynamicdata">' + Final + '</div>')
+					}
 				}
 			})
 			$('.choose_treatment').change(function () {
@@ -6895,6 +6930,9 @@
 					$(this).closest('.listofselection').find('select option[value=""]').before('<option>' + $(this).val() + '</option>')
 				}
 			)
+			$('.makedefaultCheck').on('change', function(){
+				$(this).is(":checked") ? $('.defaultCheck').attr('checked', true) : $('.defaultCheck').attr('checked', false)
+			})
 			$('.selectTeeth').change(function () {
 				$(".selectTeeth").prop('checked', false);
 				$(this).prop('checked', true);
@@ -6916,12 +6954,13 @@
 		function getfunction(ele){
 			console.log(ele.value)
 			if(ele.value == "Penicillin" || ele.value == "Cephalosporins"){
-						$('.listofselection.k1').hide();
-					}
-					else{
-						$('.listofselection.k1').show();
-					}
+				$('.listofselection.k1').hide();
+			}
+			else{
+				$('.listofselection.k1').show();
+			}
 		}
+		
 	</script>
 </body>
 

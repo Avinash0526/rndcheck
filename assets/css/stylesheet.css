@@ -624,3 +624,12 @@ textarea{
 .dynamicdata select{
     width: 100%;
 }
+.main_check_block {
+    width: max-content;
+    background-color: #e6e6e6;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.main_check_block label{
+	margin-bottom: 0;
+}

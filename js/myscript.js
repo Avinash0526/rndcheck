@@ -7,7 +7,6 @@ let num;
 var islogin = undefined;
 console.log(window.location.origin);
 var path = window.location.origin;
-path = window.location.origin + '/frontdesk';
 /* $('#addpages').attr('src', path+'/html/loginpage.html') */
 function filterByID(data) {
     if (data.id == num) {
